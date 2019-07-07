@@ -9,8 +9,8 @@ Xcode 10 or above
 
 Photos examples
 
- ![Screenshot](image01.png)\
-![Screenshot](image02.png)
+![Screenshot](image01.PNG)
+![Screenshot](image02.PNG)
 
 ## Contributing
 
