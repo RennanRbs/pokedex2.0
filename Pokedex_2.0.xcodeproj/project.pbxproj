@@ -15,6 +15,11 @@
 		E8800E1C22CEBFC200253A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8800E1A22CEBFC200253A3A /* LaunchScreen.storyboard */; };
 		E8800E2722CEBFC200253A3A /* Pokedex_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8800E2622CEBFC200253A3A /* Pokedex_2_0Tests.swift */; };
 		E8800E3222CEBFC200253A3A /* Pokedex_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8800E3122CEBFC200253A3A /* Pokedex_2_0UITests.swift */; };
+		E88A2E5C22D180140070B234 /* CollectionViewCellPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A2E5B22D180140070B234 /* CollectionViewCellPokemon.swift */; };
+		E88A2E5E22D193FE0070B234 /* ViewControllerAllPoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A2E5D22D193FE0070B234 /* ViewControllerAllPoke.swift */; };
+		E88A2E6722D28F100070B234 /* PokemonModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A2E6622D28F100070B234 /* PokemonModelBase.swift */; };
+		E88A2E6922D28F180070B234 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A2E6822D28F180070B234 /* Pokemon.swift */; };
+		E88A2E6B22D28F890070B234 /* PokemonMlModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E88A2E6A22D28F890070B234 /* PokemonMlModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		E8800E2D22CEBFC200253A3A /* Pokedex_2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pokedex_2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8800E3122CEBFC200253A3A /* Pokedex_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex_2_0UITests.swift; sourceTree = "<group>"; };
 		E8800E3322CEBFC200253A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88A2E5B22D180140070B234 /* CollectionViewCellPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellPokemon.swift; sourceTree = "<group>"; };
+		E88A2E5D22D193FE0070B234 /* ViewControllerAllPoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAllPoke.swift; sourceTree = "<group>"; };
+		E88A2E6622D28F100070B234 /* PokemonModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModelBase.swift; sourceTree = "<group>"; };
+		E88A2E6822D28F180070B234 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		E88A2E6A22D28F890070B234 /* PokemonMlModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PokemonMlModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +110,12 @@
 			isa = PBXGroup;
 			children = (
 				E8800E0E22CEBFC100253A3A /* AppDelegate.swift */,
+				E88A2E6822D28F180070B234 /* Pokemon.swift */,
+				E88A2E6A22D28F890070B234 /* PokemonMlModel.mlmodel */,
+				E88A2E6622D28F100070B234 /* PokemonModelBase.swift */,
 				E8800E1022CEBFC100253A3A /* ViewController.swift */,
+				E88A2E5D22D193FE0070B234 /* ViewControllerAllPoke.swift */,
+				E88A2E5B22D180140070B234 /* CollectionViewCellPokemon.swift */,
 				E8800E1222CEBFC100253A3A /* Main.storyboard */,
 				E8800E1822CEBFC200253A3A /* Assets.xcassets */,
 				E8800E1A22CEBFC200253A3A /* LaunchScreen.storyboard */,
@@ -259,9 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88A2E6922D28F180070B234 /* Pokemon.swift in Sources */,
+				E88A2E6B22D28F890070B234 /* PokemonMlModel.mlmodel in Sources */,
+				E88A2E6722D28F100070B234 /* PokemonModelBase.swift in Sources */,
 				E8800E1722CEBFC100253A3A /* Pokedex_2_0.xcdatamodeld in Sources */,
+				E88A2E5C22D180140070B234 /* CollectionViewCellPokemon.swift in Sources */,
 				E8800E1122CEBFC100253A3A /* ViewController.swift in Sources */,
 				E8800E0F22CEBFC100253A3A /* AppDelegate.swift in Sources */,
+				E88A2E5E22D193FE0070B234 /* ViewControllerAllPoke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
