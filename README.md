@@ -14,9 +14,9 @@ Photos examples
 
 ## Contributing
 
-- Mario Matheus
-- Gabriel Palavers
-- Wagner Matheus 
+- Mario Matheus.  https://github.com/MarioMatheus
+- Gabriel Palavers. https://github.com/palharesgabriel
+- Wagner Matheus.  https://github.com/damascenomatheus
 
 ## License
 
