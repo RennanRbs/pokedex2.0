@@ -12,6 +12,7 @@ class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollec
     
     var collectionview: UICollectionView!
     var cellId = "Cell"
+    // Name of all pokemons included in pokedex
     var pokemonName = [
         "Bulbasaur",
         "Ivysaur",
@@ -32,12 +33,14 @@ class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollec
         "Rattata"
 ]
     
+    // Size of pokemons' cell
     var sizeCellCollection: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 350, height: 400)
         return layout
     }()
     
+    // Confirm button - Green
     let greeLight : UIImageView = {
         let green = UIImageView()
         green.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
@@ -48,6 +51,7 @@ class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollec
         return green
     }()
 
+    // Navigate Button
     let upButton : UIButton = {
         let button = UIButton(type: .system)
         button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
