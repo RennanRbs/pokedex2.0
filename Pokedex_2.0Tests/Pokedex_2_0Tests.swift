@@ -23,7 +23,7 @@ class Pokedex_2_0Tests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
+\\ test de performance
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
