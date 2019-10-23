@@ -20,4 +20,4 @@ Photos examples
 
 ## License
 
-This project is licensed under the RBS License.
+This project is licensed under the Rennan Rebouças License.
