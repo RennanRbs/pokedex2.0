@@ -4,7 +4,7 @@
 //
 //  Created by Rennan Rebouças on 04/07/19.
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
-//
+//  Performance tests
 
 import XCTest
 @testable import Pokedex_2_0
