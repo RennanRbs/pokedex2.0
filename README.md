@@ -12,11 +12,6 @@ Photos examples
 ![Screenshot](image01.PNG)
 ![Screenshot](image02.PNG)
 
-## Contributing
-
-- Mario Matheus.  https://github.com/MarioMatheus
-- Gabriel Palavers. https://github.com/palharesgabriel
-- Wagner Matheus.  https://github.com/damascenomatheus
 
 ## License
 
