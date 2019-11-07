@@ -15,4 +15,4 @@ Photos examples
 
 ## License
 
-This project is licensed under the Rennan Rebouças License.
+This project is licensed by Rennan Rebouças License.
