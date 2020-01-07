@@ -15,4 +15,4 @@ Photos examples
 
 ## License
 
-This project is for free use.
+This project is for free use for all.
