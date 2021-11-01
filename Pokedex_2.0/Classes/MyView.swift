@@ -6,13 +6,9 @@
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class MyView: UIView {
-    
-
-    
+final class MyView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         createSubviews()

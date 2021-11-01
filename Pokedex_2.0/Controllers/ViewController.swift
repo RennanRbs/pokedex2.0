@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
+final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     var captureSession: AVCaptureSession!
     var stillImageOutput: AVCapturePhotoOutput!

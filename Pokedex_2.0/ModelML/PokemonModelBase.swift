@@ -6,11 +6,9 @@
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
-
 import UIKit
 
-
-class PokemonModelBase {
+final class PokemonModelBase {
     
     func predict(with image: UIImage) -> (String, Double)? {
         guard let imageResized = imageWithImage(image: image, scaledToSize: CGSize(width: 299, height: 299)),
@@ -62,6 +60,5 @@ class PokemonModelBase {
         
         return nil
     }
-    
 }
 

@@ -8,10 +8,7 @@
 
 import UIKit
 
-
 struct Pokemon {
-    
     var name: String
     var image: UIImage
-    
 }

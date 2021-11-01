@@ -6,9 +6,7 @@
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
-import Foundation
 import UIKit
-
 
 extension ViewControllerAllPoke {
     

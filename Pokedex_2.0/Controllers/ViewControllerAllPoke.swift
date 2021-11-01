@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+final class ViewControllerAllPoke: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var collectionview: UICollectionView!
     var cellId = "Cell"
@@ -78,10 +78,4 @@ class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollec
         setupCollection()
         
     }
-    
-    
-    
-    
-
-
 }
