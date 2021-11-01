@@ -14,7 +14,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var stillImageOutput: AVCapturePhotoOutput!
     var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     
-    let buttonCatch: UIButton = {
+    private let buttonCatch: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("  Catch  ", for: .normal)
         button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
@@ -27,7 +27,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         return button
     }()
     
-    let saveButton: UIButton = {
+    private let saveButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("   Save   ", for: .normal)
         button.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
@@ -40,33 +40,33 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         return button
     }()
     
-    let backgroundPokedex: UIImageView = {
+    private let backgroundPokedex: UIImageView = {
         var pokedex = UIImageView(image: UIImage(named: "pokedex"))
         pokedex.translatesAutoresizingMaskIntoConstraints = false
         return pokedex
     }()
 
     
-    let cameraPokedex: UIImageView = {
+    private let cameraPokedex: UIImageView = {
         var pokedex = UIImageView(image: UIImage(named: "camera"))
         pokedex.translatesAutoresizingMaskIntoConstraints = false
         
         return pokedex
     }()
     
-    let previewPokedex: UIImageView = {
+    private let previewPokedex: UIImageView = {
         var pokedex = UIImageView(image: UIImage(named: "fundo"))
         pokedex.translatesAutoresizingMaskIntoConstraints = false
         return pokedex
     }()
     
-    let previewCameraPokedex: UIImageView = {
+    private let previewCameraPokedex: UIImageView = {
         var pokedex = UIImageView(image: UIImage(named: "fundo"))
         pokedex.translatesAutoresizingMaskIntoConstraints = false
         return pokedex
     }()
     
-    let labelPokemonName: UIImageView = {
+    private let labelPokemonName: UIImageView = {
         let pokemon = UIImageView()
         pokemon.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         pokemon.clipsToBounds = true
@@ -77,7 +77,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         return pokemon
     }()
     
-    let labelPokemon: UILabel = {
+    private let labelPokemon: UILabel = {
         let pokemon = UILabel()
         pokemon.text = "Pokemon Name"
         pokemon.textAlignment = .center
@@ -85,7 +85,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         return pokemon
     }()
     
-    let redLed: UIImageView = {
+    private let redLed: UIImageView = {
         let pokemon = UIImageView()
         pokemon.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         pokemon.clipsToBounds = true
@@ -93,7 +93,8 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         pokemon.translatesAutoresizingMaskIntoConstraints = false
         return pokemon
     }()
-    let greeLed: UIImageView = {
+    
+    private let greeLed: UIImageView = {
         let pokemon = UIImageView()
         pokemon.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
         pokemon.clipsToBounds = true
@@ -101,7 +102,8 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         pokemon.translatesAutoresizingMaskIntoConstraints = false
         return pokemon
     }()
-    let yellowLed: UIImageView = {
+    
+    private let yellowLed: UIImageView = {
         let pokemon = UIImageView()
         pokemon.backgroundColor = #colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1)
         pokemon.clipsToBounds = true
@@ -110,9 +112,8 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         return pokemon
     }()
 
-    var myView = MyView()
+    private var myView = MyView()
 
-    
     override func viewDidLoad() {
         view.addSubview(myView)
         super.viewDidLoad()
@@ -148,8 +149,8 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             print("Error Unable to initialize back camera:  \(error.localizedDescription)")
         }
     }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
 }
