@@ -15,4 +15,6 @@ Photos examples
 
 ## License
 
-This project is for free use for all.#
+This project is for free use for all.
+
+# Hactoberfest Project
