@@ -145,7 +145,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
                 setupLivePreview()
             }
         }
-        catch let error  {
+        catch {
             print("Error Unable to initialize back camera:  \(error.localizedDescription)")
         }
     }
