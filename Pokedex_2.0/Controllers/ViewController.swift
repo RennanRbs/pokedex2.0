@@ -93,6 +93,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         pokemon.translatesAutoresizingMaskIntoConstraints = false
         return pokemon
     }()
+    
     let greeLed: UIImageView = {
         let pokemon = UIImageView()
         pokemon.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
@@ -101,6 +102,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         pokemon.translatesAutoresizingMaskIntoConstraints = false
         return pokemon
     }()
+    
     let yellowLed: UIImageView = {
         let pokemon = UIImageView()
         pokemon.backgroundColor = #colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1)
@@ -112,7 +114,6 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
 
     var myView = MyView()
 
-    
     override func viewDidLoad() {
         view.addSubview(myView)
         super.viewDidLoad()
@@ -148,8 +149,6 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             print("Error Unable to initialize back camera:  \(error.localizedDescription)")
         }
     }
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-
+    
+    override var prefersStatusBarHidden: Bool { true }
 }
