@@ -36,8 +36,9 @@ final class PokemonModelBase {
         let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
         var pixelBuffer : CVPixelBuffer?
         let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(image.size.width), Int(image.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
-        
-        guard status == kCVReturnSuccess else { return nil }
+        guard status == kCVReturnSuccess else {
+            return nil
+        }
         
         if let pixelBuffer = pixelBuffer {
             CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))

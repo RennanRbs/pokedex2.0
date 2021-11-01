@@ -55,6 +55,7 @@ final class ViewControllerAllPoke: UIViewController, UICollectionViewDelegate, U
         button.setBackgroundImage(UIImage(named: "upbutton")!, for: .normal)
         button.alpha = 1.0
         button.layer.cornerRadius = 8
+       // button.addTarget(self, action:#selector(upAction), for: .touchUpInside)
         return button
     }()
     
@@ -65,6 +66,7 @@ final class ViewControllerAllPoke: UIViewController, UICollectionViewDelegate, U
         button.setBackgroundImage(UIImage(named: "downbutton")!, for: .normal)
         button.alpha = 1.0
         button.layer.cornerRadius = 8
+        // button.addTarget(self, action:#selector(upAction), for: .touchUpInside)
         return button
     }()
     
@@ -74,5 +76,6 @@ final class ViewControllerAllPoke: UIViewController, UICollectionViewDelegate, U
         setup()
         animationLeds()
         setupCollection()
+        
     }
 }

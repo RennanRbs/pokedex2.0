@@ -115,16 +115,15 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var myView = MyView()
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
         view.addSubview(myView)
+        super.viewDidLoad()
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(navigate))
         swipeGesture.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeGesture)
         self.navigationController?.isNavigationBarHidden = true
-        
         setup()
         animationLeds()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -146,7 +145,7 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
                 setupLivePreview()
             }
         }
-        catch {
+        catch let error  {
             print("Error Unable to initialize back camera:  \(error.localizedDescription)")
         }
     }
