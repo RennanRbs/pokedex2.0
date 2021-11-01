@@ -10,16 +10,8 @@ import UIKit
 
 final class MyView: UIView {
     override init(frame: CGRect) {
-        super.init(frame: frame)
-        createSubviews()
+        super.init(frame: .zero)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        createSubviews()
-    }
-    
-    func createSubviews() {
-
-    }
+    required init?(coder aDecoder: NSCoder) { nil }
 }
