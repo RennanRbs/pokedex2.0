@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+final class ViewControllerAllPoke: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var collectionview: UICollectionView!
     var cellId = "Cell"
@@ -55,7 +55,6 @@ class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollec
         button.setBackgroundImage(UIImage(named: "upbutton")!, for: .normal)
         button.alpha = 1.0
         button.layer.cornerRadius = 8
-       // button.addTarget(self, action:#selector(upAction), for: .touchUpInside)
         return button
     }()
     
@@ -66,7 +65,6 @@ class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollec
         button.setBackgroundImage(UIImage(named: "downbutton")!, for: .normal)
         button.alpha = 1.0
         button.layer.cornerRadius = 8
-        // button.addTarget(self, action:#selector(upAction), for: .touchUpInside)
         return button
     }()
     
@@ -76,12 +74,5 @@ class ViewControllerAllPoke: UIViewController,UICollectionViewDelegate, UICollec
         setup()
         animationLeds()
         setupCollection()
-        
     }
-    
-    
-    
-    
-
-
 }

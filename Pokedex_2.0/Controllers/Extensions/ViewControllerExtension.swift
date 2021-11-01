@@ -6,7 +6,6 @@
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import AVFoundation
 
@@ -22,7 +21,6 @@ extension ViewController {
         let prediction = PokemonModelBase().predict(with: image)
         labelPokemon.text = prediction?.0
     }
-
     
     @objc func catchBtn(_ sender: UIButton)  {
         sender.pulsate()
@@ -43,7 +41,6 @@ extension ViewController {
         previewPokedex.image = image
         verifyPokemon(basedAt: image)
     }
-
     
     func animationLeds() {
         let imagesRed: [UIImage] = [#imageLiteral(resourceName: "red"), #imageLiteral(resourceName: "vazio"), #imageLiteral(resourceName: "vazio")]
@@ -55,7 +52,6 @@ extension ViewController {
     }
     
     func setupLivePreview() {
-        
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         videoPreviewLayer.videoGravity = .resizeAspectFill
         videoPreviewLayer.connection?.videoOrientation = .portrait
@@ -68,7 +64,6 @@ extension ViewController {
                 self.videoPreviewLayer.frame = self.previewCameraPokedex.bounds
             }
         }
-        
     }
 
     func setup()  {
@@ -130,9 +125,6 @@ extension ViewController {
             
             saveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant:-80),
             saveButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant:200),
-            
-            
             ])
     }
-
 }

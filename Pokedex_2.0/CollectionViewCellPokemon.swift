@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewCellPokemon: UICollectionViewCell {
+final class CollectionViewCellPokemon: UICollectionViewCell {
     
     let imagePokemon: UIImageView = {
         let pokemon = UIImageView(image: UIImage(named: "quem"))

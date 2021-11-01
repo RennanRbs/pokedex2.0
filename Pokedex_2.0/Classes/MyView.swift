@@ -6,24 +6,12 @@
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class MyView: UIView {
-    
-
-    
+final class MyView: UIView {
     override init(frame: CGRect) {
-        super.init(frame: frame)
-        createSubviews()
+        super.init(frame: .zero)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        createSubviews()
-    }
-    
-    func createSubviews() {
-
-    }
+    required init?(coder aDecoder: NSCoder) { nil }
 }

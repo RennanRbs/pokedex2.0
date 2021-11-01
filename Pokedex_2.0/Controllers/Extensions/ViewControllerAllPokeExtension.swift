@@ -6,9 +6,7 @@
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
-import Foundation
 import UIKit
-
 
 extension ViewControllerAllPoke {
     
@@ -39,13 +37,11 @@ extension ViewControllerAllPoke {
     
     func animationLeds() {
         let imagesRed: [UIImage] = [#imageLiteral(resourceName: "vazio"), #imageLiteral(resourceName: "green"), #imageLiteral(resourceName: "vazio")]
-        
         greeLight.image = UIImage.animatedImage(with: imagesRed, duration: 1)
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pokemonName.count
+        pokemonName.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -86,5 +82,4 @@ extension ViewControllerAllPoke {
             collectionview.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -35),
             ])
     }
-
 }

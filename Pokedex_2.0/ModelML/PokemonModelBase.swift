@@ -6,11 +6,9 @@
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
-
 import UIKit
 
-
-class PokemonModelBase {
+final class PokemonModelBase {
     
     func predict(with image: UIImage) -> (String, Double)? {
         guard let imageResized = imageWithImage(image: image, scaledToSize: CGSize(width: 299, height: 299)),
@@ -38,9 +36,8 @@ class PokemonModelBase {
         let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
         var pixelBuffer : CVPixelBuffer?
         let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(image.size.width), Int(image.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
-        guard status == kCVReturnSuccess else {
-            return nil
-        }
+        
+        guard status == kCVReturnSuccess else { return nil }
         
         if let pixelBuffer = pixelBuffer {
             CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
@@ -62,6 +59,5 @@ class PokemonModelBase {
         
         return nil
     }
-    
 }
 
