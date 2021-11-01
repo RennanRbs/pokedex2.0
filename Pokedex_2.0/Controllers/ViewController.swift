@@ -149,8 +149,6 @@ final class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             print("Error Unable to initialize back camera:  \(error.localizedDescription)")
         }
     }
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-
+    
+    override var prefersStatusBarHidden: Bool { true }
 }
